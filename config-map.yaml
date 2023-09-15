@@ -1,0 +1,15 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: nginx-config
+  namespace: tsuki
+data:
+  default.conf: |
+    server {
+      listen 80;
+      server_name _;
+      
+      location / {
+        return 200 "Suki!";
+      }
+    }
