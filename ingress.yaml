@@ -16,7 +16,7 @@ spec:
           pathType: ImplementationSpecific
           backend:
             service:
-              name: app-nginx
+              name: nginx
               port:
                 number: 80
           property:
